@@ -8,6 +8,8 @@ import appleButton from "../Assets/buttons/appleButton.svg";
 import googleButton from "../Assets/buttons/googleButton.svg";
 import facebookButton from "../Assets/buttons/facebookButton.svg";
 import CheckboxButton from "./Checkbox";
+// import "../Assets/stylesheets/Landing.css"
+import Modal from "./Modal";
 
 const linkColor = "#0066FF";
 const visitedLinkColor = "#0066FF";
@@ -85,14 +87,14 @@ const loginRowStyle = {
 const altLoginButtons = {
   display: "flex",
   flexDirection: "column",
-  width:'100%'
+  width: "100%",
 };
 
 const svgButtonStyle = {
   background: "none",
   border: "none",
   // width: '100%',
-  alignItems: 'center'
+  alignItems: "center",
 };
 
 const rememberMeContainerStyle = {
@@ -110,6 +112,8 @@ const rememberMeTextStyle = {
 const dividerGap = {
   // margin: "1rem",
 };
+
+const BUTTON_WRAPPER_STYLES = {};
 
 export default function LandingPage({ onLogin }) {
   return (
@@ -145,7 +149,9 @@ export default function LandingPage({ onLogin }) {
 
             <div style={loginRowStyle}>
               {/* <Link to="HomePage" style={{ textDecoration: "none" }}> */}
-                <button style={loginButton} onClick={onLogin}>Login</button>
+              <button style={loginButton} onClick={onLogin}>
+                Login
+              </button>
               {/* </Link> */}
               <a href="/" style={{ color: linkColor, textDecoration: "none" }}>
                 Forgot Password?
@@ -153,15 +159,19 @@ export default function LandingPage({ onLogin }) {
               {/* This needs to be an a href by end of project. Just placing for now until the main mini project is completed. */}
             </div>
             <div>
-              <p style={{ color: "white" }}>
+              <p style={{ color: "white", width:'40%'}}>
                 Don't have an Account?{" "}
-                <a
-                  href="/"
+                {/* <a
+                  href="Signup"
                   style={{ color: linkColor, textDecoration: "none" }}
                 >
                   {" "}
                   Create new
-                </a>
+                </a> */}
+                {/* <div style={BUTTON_WRAPPER_STYLES}>
+                  <button>Sign UP!</button>
+                  <Modal>Fancy Fancy</Modal>
+                </div> */}
               </p>
               {/* Create new also needs to be an href but needs to open the overlay */}
             </div>

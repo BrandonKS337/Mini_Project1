@@ -1,0 +1,73 @@
+/* Replace this with the corresponding styles for your modal */
+.modal-container {
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.73) 100%, rgba(255, 255, 255, 0) 100%);
+  }
+  
+  .modal-content {
+    width: 700px;
+    height: 750px;
+    left: 370px;
+    top: 137px;
+    position: absolute;
+    background: white;
+    border-radius: 45px;
+    /* Add other common styles for the modal content here */
+  }
+  
+  /* Add other CSS classes for the individual elements in the modal */
+  
+  /* For example: */
+  
+  .title {
+    left: 580px;
+    top: 192px;
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-size: 36px;
+    font-family: 'Miltonian Tattoo';
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+  .input-container {
+    width: 598px;
+    height: 85px;
+    left: 421px;
+    top: 268px;
+    position: absolute;
+  }
+  
+  .input-label {
+    left: 78px;
+    top: 25px;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'Miltonian Tattoo';
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+  .input-field {
+    /* Add styles for the input field container */
+  }
+  
+  /* Add styles for other elements similarly */
+  
+  /* Add styles for buttons */
+  .login-button {
+    width: 216px;
+    height: 49px;
+    left: 492px;
+    top: 618px;
+    position: absolute;
+    /* Add other styles for the login button */
+  }
+  
+  /* Repeat for other buttons */
+  
