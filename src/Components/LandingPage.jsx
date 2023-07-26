@@ -3,6 +3,11 @@ import orWithArrows from "../Assets/Icons/orWithArrows.svg";
 import "../App.css";
 import combatGiantBackground from "../Assets/images/combatGiantBackground.jpg";
 import fantasyNexusLogo from "../Assets/Icons/fantasyNexusLogo.svg";
+import appleButton from "../Assets/buttons/appleButton.svg";
+import googleButton from "../Assets/buttons/googleButton.svg";
+import facebookButton from "../Assets/buttons/facebookButton.svg"
+
+
 
 const componentStyle = {
   backgroundImage: `url(${combatGiantBackground})`,
@@ -49,6 +54,12 @@ const checkBox = {
     border: '1px solid black',
     borderRadius: '45px',
     
+};
+
+const altLoginButtons = {
+display: 'flex',
+flexDirection: 'column',
+
 }
 
 const Landing = () => {
@@ -93,6 +104,12 @@ const Landing = () => {
             </div>
             <div>
               <img src={orWithArrows} alt="Or with arrows" />{" "}
+            </div>
+            <div style={altLoginButtons}>
+                <button><img src={facebookButton} /></button>
+                <button><img src={googleButton} /></button>
+                <button><img src={appleButton} /></button>
+
             </div>
           </div>
         </div>
