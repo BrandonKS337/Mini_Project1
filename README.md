@@ -3,7 +3,7 @@ First of 3 Mini-Projects prior to Capstone. My Plan is to orient each of the pro
 
 Description:
 The purpose of the Mini Project is to reinforce skills that have been covered in recent modules.
-Select a data set and analyse it using the techniques learned in recent modules. Prepare and present a 10-minute presentation in class.
+Select a data set and analyze it using the techniques learned in recent modules. Prepare and present a 10-minute presentation in class.
 
 Create fictitious company name, goal, product they're trying sell (get them to sign up, or contact you through the CTA)
 
