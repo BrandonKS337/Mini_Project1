@@ -31,44 +31,26 @@ export default function Modal({ open, children, onClose }) {
     <>
       <div style={OVERLAY_STYLES} />
       <div style={MODAL_STYLES}>
-        <div className="modal-container">
-          <div className="modal-content">
-            <div className="title">Create Account</div>
-            <div className="input-container">
-              <div className="input-label">User Name</div>
-              <div className="input-field">
-                {/* Input field for User Name */}
-              </div>
-            </div>
-            <div className="input-container">
-              <div className="input-label">Email</div>
-              <div className="input-field">{/* Input field for Email */}</div>
-            </div>
-            <div className="input-container">
-              <div className="input-label">Password</div>
-              <div className="input-field">
-                {/* Input field for Password */}
-              </div>
-            </div>
-            <div className="login-button">LOGIN</div>
-            <div className="sign-in-button">Sign In</div>
-            <div className="google-login-button">
-              <div className="google-icon" />
-              <div className="google-text">Sign in with Google</div>
-            </div>
-            <div className="facebook-login-button">
-              <div className="facebook-text">Log in with Google</div>
-              <div className="facebook-icon" />
-            </div>
-            <div className="apple-login-button">
-              <div className="apple-icon" />
-              <div className="apple-text">Continue with Apple</div>
-            </div>
-            <div className="separator">
-              <div className="separator-text">OR</div>
-              <div className="separator-line" />
-            </div>
+        <div>
+          <div>Create Account</div>
+          <div>
+            <div>User Name</div>
+            {/* Input field for User Name */}
           </div>
+          <div>
+            <div>Email</div>
+            {/* Input field for Email */}
+          </div>
+          <div>
+            <div>Password</div>
+            {/* Input field for Password */}
+          </div>
+          <div>LOGIN</div>
+          <div>Sign In</div>
+          <div>Sign in with Google</div>
+          <div>Log in with Google</div>
+          <div>Continue with Apple</div>
+          <div>OR</div>
         </div>
 
         <button onClick={onClose}>Close Modal</button>
